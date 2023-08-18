@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <title>Abhiram</title>
 </head>
 <body>
     <div id="root"></div>
-    <script>
+    <!-- <script>
         class App extends React.Component {
             render() {
                 return React.createElement(
@@ -23,6 +24,18 @@
             React.createElement(App, null),
             document.getElementById("root")
         );
+    </script> -->
+    <script type="text/babel">
+        class App extends React.Component {
+            render() {
+                return (
+                    <div>
+                        <h1>Hello React</h1>
+                    </div>
+                );
+            }
+        }
+        ReactDOM.render(<App />, document.getElementById("root"));
     </script>
 </body>
 </html>
