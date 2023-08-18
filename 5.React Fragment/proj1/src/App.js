@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 
 class App extends Component {
     render() {
@@ -9,11 +9,18 @@ class App extends Component {
         //     </React.Fragment>
         // );
 
+        // return (
+        //     <>
+        //         <h1>Abhiram</h1>
+        //         <p>Javalli</p>
+        //     </>
+        // );
+
         return (
-            <>
+            <Fragment>
                 <h1>Abhiram</h1>
                 <p>Javalli</p>
-            </>
+            </Fragment>
         );
     }
 }
