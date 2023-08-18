@@ -11,7 +11,9 @@ class App extends Component{
         //     </div>
         // )
 
-        return <h1>Abhiram B S</h1>
+        // return <h1>Abhiram B S</h1>
+
+        return React.createElement('h1', null, 'Abhiram B S')
     }
 }
 
