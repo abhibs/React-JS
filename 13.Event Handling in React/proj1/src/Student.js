@@ -11,6 +11,10 @@ export default class Student extends Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            name: "Abhiram",
+            roll : this.props.roll
+        }
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick() {
@@ -19,7 +23,7 @@ export default class Student extends Component {
     render() {
         return (
             <div>
-                <h1>Hello Event</h1>
+                <h1>Hello {this.state.name} and Roll Number is {this.state.roll}</h1>
                 <button onClick={this.handleClick}>Click</button>
             </div>
         )
