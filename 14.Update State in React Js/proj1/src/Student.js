@@ -9,8 +9,27 @@ class Student extends Component {
         };
     }
 
+    // handleClick = () => {
+    //     this.setState({ name: "Anjan", roll: "102" });
+    // };
+
+    // handleClick = () => {
+    //     this.setState((state) => {
+    //         console.log(state);
+    //     });
+    // };
+    // handleClick = () => {
+    //     this.setState((state) => {
+    //         console.log(state.name);
+    //         console.log(state.roll);
+    //     });
+    // };
+
     handleClick = () => {
-        this.setState({ name: "Anjan", roll: "102" });
+        this.setState((props) => {
+            console.log(props.name);
+            console.log(props.roll);
+        });
     };
 
     render() {
