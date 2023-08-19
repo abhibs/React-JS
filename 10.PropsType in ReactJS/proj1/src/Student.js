@@ -22,5 +22,9 @@ Student.propTypes = {
     roll: pt.number
 }
 
+Student.defaultProps = {
+    name:"Abhiram"
+}
+
 
 export default Student
