@@ -12,9 +12,15 @@ class Student extends React.Component{
     }
 }
 
+// Student.propTypes = {
+//     name: pt.string,
+//     roll: pt.number
+// }
+
 Student.propTypes = {
-    name: pt.string,
+    name: pt.string.isRequired,
     roll: pt.number
 }
+
 
 export default Student
