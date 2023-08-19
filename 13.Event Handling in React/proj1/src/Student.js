@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 
 export default class Student extends Component {
-    handleClick(){
+    // handleClick(){
+    //     console.log("Button Clicked", this);
+    // }
+
+    handleClick=()=>{
         console.log("Button Clicked", this);
     }
     render() {
