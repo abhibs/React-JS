@@ -5,8 +5,16 @@ export default class Student extends Component {
     //     console.log("Button Clicked", this);
     // }
 
-    handleClick=()=>{
-        console.log("Button Clicked", this);
+    // handleClick=()=>{
+    //     console.log("Button Clicked", this);
+    // }
+
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick() {
+        console.log("Button Click ", this);
     }
     render() {
         return (
