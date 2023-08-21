@@ -18,12 +18,15 @@ export default class Student extends Component {
     //     console.log(id);
     // }
 
-    handleClick = (id) =>{
+    handleClick = (id,j, e) =>{
         console.log(id);
+        console.log(e);
+        console.log(j);
+
     }
 
-    handleClickArg = () => {
-        this.handleClick(this.state.id)
+    handleClickArg = (e) => {
+        this.handleClick(this.state.id, "101", e)
     }
 
     render() {
