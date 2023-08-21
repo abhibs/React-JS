@@ -41,9 +41,13 @@ export default class Student extends Component {
             <div>
                 <h1>Hello, {this.state.name}</h1>
                 {/* <button onClick={this.handleClick("101")}>Click Me</button> */}
-                <button onClick={(e) => {
+                {/* <button onClick={(e) => {
                     this.handleClick(this.state.id, e)
-                }}>Click Me</button>
+                }}>Click Me</button> */}
+
+                <button onClick={
+                    this.handleClick.bind(this, this.state.id)
+                }>Click Me</button>
             </div>
         )
     }
