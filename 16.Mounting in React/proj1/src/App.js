@@ -22,6 +22,10 @@ export default class App extends Component {
         return null
     }
 
+    componentDidMount(){
+        console.log("app component did mount - mounted")
+    }
+
     render() {
         console.log("app rendered");
         return(
