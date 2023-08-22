@@ -28,14 +28,29 @@ function App(){
     // )
 
 
+    // const [name, setName] = useState("Abhiram")
+    
+    // function handleClick(){
+    //     setName("Abhi")
+    // }
+    // return(
+    //     <>
+    //         <h1>{name}</h1>
+    //         <button onClick={handleClick}>Change</button>
+    //     </>
+    // )
+
+
     const [name, setName] = useState("Abhiram")
+    const [roll, setRoll] = useState(101)
     
     function handleClick(){
         setName("Abhi")
+        setRoll(102)
     }
     return(
         <>
-            <h1>{name}</h1>
+            <h1>Name: {name} Roll: {roll}</h1>
             <button onClick={handleClick}>Change</button>
         </>
     )
