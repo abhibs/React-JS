@@ -23,6 +23,7 @@ export default class App extends Component {
     }
 
     render() {
+        console.log("app rendered");
         return(
             <>
                 <Student name="Abhiram"/>
