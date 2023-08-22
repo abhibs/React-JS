@@ -9,7 +9,9 @@ export default class Student extends Component {
     }
     clickHandle = () =>{
         console.log("Button Clicked");
-        this.setState({roll:102})
+        // this.setState({roll:102})
+	    this.setState({ roll: this.state.roll + 2 });
+
     }
     render() {
         console.log("student rendered");
