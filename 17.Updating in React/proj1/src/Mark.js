@@ -26,6 +26,17 @@ export default class Mark extends Component {
         console.log(nextProps, nextState);
         return false;
     }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log("Marks - Get Snap before Update - It runs before update");
+        console.log(prevProps, prevState);
+        return 45;
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log("Marks - Component Did Update - It runs after update");
+        console.log(prevProps, prevState, snapshot);
+    }
     
     render() {
         console.log("mark rendered");
