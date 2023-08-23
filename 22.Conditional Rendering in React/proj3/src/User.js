@@ -5,7 +5,7 @@ export default class User extends Component {
         return (
             <>
                 <h1>Hello Abhiram</h1>
-                <button>Logout</button>
+                <button onClick={this.props.clickData}>Logout</button>
             </>
         )
     }
