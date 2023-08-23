@@ -22,11 +22,14 @@ export default class App extends Component {
 
     render() {
         const isLoggedIn = this.state.isLoggedIn
+        let consumer;
+
         if(isLoggedIn){
-            return <User clickData = {this.clickOut}/>
+            consumer = <User clickData = {this.clickOut}/>
         }
         else{
-            return <Guest clickData = {this.clickLogin} />
+            consumer = <Guest clickData = {this.clickLogin} />
         }
+        return <div>{consumer}</div>
     }
 }
