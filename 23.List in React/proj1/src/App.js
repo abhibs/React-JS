@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 
 export default class App extends Component {
     render() {
-        const arr = [10, 20, 30, 40]
+        // const arr = [10, 20, 30, 40]
+        const arr = this.props.numbers
+
         // console.log("Old Array :", arr);
         // const newArr = arr.map((num)=>{
         //     console.log("Num: ", num);
