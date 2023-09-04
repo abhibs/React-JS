@@ -5,7 +5,7 @@ export default class App extends Component {
         const arr = [10, 20, 30, 40]
 
         const newArr = arr.map((num)=>{
-            return <li>{num}</li>
+            return <li>{num * 2}</li>
         })
         return (
         <ul>
