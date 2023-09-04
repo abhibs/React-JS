@@ -21,9 +21,11 @@ export default class App extends Component {
                 {/* {newUser} */}
 
                 {
-                    this.state.users.map(user=>{
-                        return <h1>Id: {user.id} Name: {user.name} Password: {user.password}</h1>
-                    })
+                    // this.state.users.map(user=>{
+                    //     return <h1>Id: {user.id} Name: {user.name} Password: {user.password}</h1>
+                    // })
+
+                    this.state.users.map(user=><h1>Id: {user.id} Name: {user.name} Password: {user.password}</h1>)
                 }
             </div>
         )
