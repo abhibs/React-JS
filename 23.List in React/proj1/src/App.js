@@ -13,9 +13,10 @@ export default class App extends Component {
         <ul>
             {/* {newArr} */}
             {
-                arr.map(num=>{
-                    return <li>{num}</li>
-                })
+                // arr.map(num=>{
+                //     return <li>{num}</li>
+                // })
+                arr.map(num=><li>{num}</li>)
             }
         </ul>
         )
