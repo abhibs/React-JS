@@ -10,12 +10,15 @@ export default class App extends Component {
         isLoggerIn:false
     }
     render() {
+        const newUser = this.state.users.map(user=>{
+            return <h1>Id: {user.id} Name: {user.name} Password: {user.password}</h1>
+        })
         return (
             <div>
-                <h1>Id: {this.state.users[0].id} Name: {this.state.users[0].name} Password: {this.state.users[0].password}</h1>
+                {/* <h1>Id: {this.state.users[0].id} Name: {this.state.users[0].name} Password: {this.state.users[0].password}</h1>
                 <h1>Id: {this.state.users[1].id} Name: {this.state.users[1].name} Password: {this.state.users[1].password}</h1>
-                <h1>Id: {this.state.users[2].id} Name: {this.state.users[2].name} Password: {this.state.users[2].password}</h1>
-
+                <h1>Id: {this.state.users[2].id} Name: {this.state.users[2].name} Password: {this.state.users[2].password}</h1> */}
+                {newUser}
             </div>
         )
     }
