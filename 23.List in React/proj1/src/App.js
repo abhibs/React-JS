@@ -6,7 +6,7 @@ export default class App extends Component {
         console.log("Old Array :", arr);
         const newArr = arr.map((num)=>{
             console.log("Num: ", num);
-            return <li>{num * 2}</li>
+            return <li name="Abhiram">{num * 2}</li>
         })
         console.log("New Array: ", newArr);
         return (
